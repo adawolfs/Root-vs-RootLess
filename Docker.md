@@ -48,7 +48,7 @@ gpasswd -a damien docker
 
 ```
 // Crear un contenedor de alpine con la raiz montada en el
-$ docker run -v /:/rootfs --rm -it alpine:3.14 /bin/sh
+$ docker run -v /:/rootfs --rm -it --privileged alpine:3.14 /bin/sh
 
 // Solo si queremos mantener acceso a internet
 # mount --bind /etc/resolv.conf /rootfs/etc/resolv.conf
