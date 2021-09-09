@@ -1,13 +1,13 @@
 # Root-vs-Rootless
 ## Escalando permisos con contenedores.
 
-Este proyecto es un laboratorio para evaluar posibles brechas de seguridad al ejecutar contenedores dentro de un sistema linux como usuario root.
+Este proyecto es un laboratorio para evaluar posibles brechas de seguridad al ejecutar contenedores dentro de un sistema linux como usuario root
 
 ## Motivation
 Los contenedores son maquinas de software pontes, versatiles e inseguras por lo cual es necesario evaluar los riesgos y opciones disponibles.
 
 ## This lab
-
+Versiones utilizadas en este laboratorio
 ```
 # head -2 /etc/os-release
 NAME="Ubuntu"
@@ -18,6 +18,12 @@ Docker version 20.10.7, build 20.10.7-0ubuntu1~21.04.1
 
 # podman --version
 podman version 3.0.1
+```
+
+### Test image
+Para hacer pruebas he creado el siguiente [contenedor](Containerfile)
+```
+ghcr.io/adawolfs/nonroot:alpine3.14
 ```
 
 ## Use-Case
